@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    
+    <div class="margin" style="margin:100px;">
+        <section class="pricing">
+        <div class="container">
+            <div class="row">
+        
+                <div class="col-lg-3">
+
+                    <div class="card" >
+                        <img class="card-img-top" src="/static/wfh.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Work From Home</h5>
+                            <p class="card-text">In a roundup of 12 of our best remote work articles, we cover all kinds of topics that you might be wondering about. From setting up a work-from-home policy, to managing your team remotely and battling with Impostor Syndrome, .</p>
+                            <a href="https://blog.trello.com/work-from-home-guides" class="btn btn-primary">Trello WFH</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="card" >
+                        <img class="card-img-top" src="/static/washhands.jpg" alt="Card image cap">
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Infection prevention </h5>
+                            <p class="card-text">This is the first edition of guidance on infection prevention and control (IPC) strategies for use when infection with a novel coronavirus (2019-nCoV) is suspected .This interim guidance is for all those, including managers of health care facilities and mortuaries, religious and public health authorities, and families.</p>
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/infection-prevention-and-control" class="btn btn-primary">Safety Precautions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="card" >
+                        <img class="card-img-top" src="/static/schools.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Guidance for schools, workplaces & institutions</h5>
+                            <p class="card-text">COVID-19 and the measures taken to mitigate the global impact of the pandemic have disrupted food production and food supply chains worldwide. However, ensuring a continuous and safe food supply is a critical issue for the health of all people, everywhere.</p>
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/guidance-for-schools-workplaces-institutions" class="btn btn-primary">Workplace Rules</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="card" >
+                        <img class="card-img-top" src="/static/gather.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Points of entry and mass gatherings</h5>
+                            <p class="card-text">This document provides public health guidance for social and religious practices and gatherings during Ramadan. It also offers advice to strengthen mental and physical well-being so as to live in full the spirit of Ramadan as the COVID-19 pandemic continues</p>
+                            <a href="https://covid19.who.int/" class="btn btn-primary">Gathering Guidelines</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        {% endblock %}
+</body>
+</html>
